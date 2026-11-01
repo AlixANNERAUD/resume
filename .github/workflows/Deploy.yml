@@ -86,3 +86,20 @@ jobs:
       - name: Deploy | GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+
+  # The single check required on main. Add any new check job to `needs` so
+  # that branch protection keeps one stable check name.
+  required:
+    name: Required
+    if: always()
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: All required jobs passed
+        env:
+          RESULTS: ${{ join(needs.*.result, ' ') }}
+        run: |
+          echo "Results: $RESULTS"
+          for result in $RESULTS; do
+            if [ "$result" != "success" ]; then exit 1; fi
+          done
