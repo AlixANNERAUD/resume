@@ -1,8 +1,5 @@
+# Build outputs
 *.pdf
-*.log
-*.fls
-*.fdb_latexmk
-*.aux
-*.synctex.gz
-*.xmpi
-*.out
+*.png
+!Images/*.png
+public/
