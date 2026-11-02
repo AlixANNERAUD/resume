@@ -1,5 +1,4 @@
 # Build outputs
 *.pdf
 *.png
-!Images/*.png
 public/

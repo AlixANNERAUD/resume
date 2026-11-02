@@ -24,7 +24,7 @@ defaults:
     shell: bash
 
 env:
-  TYPST_FLAGS: --root . --font-path fonts --ignore-system-fonts
+  TYPST_FLAGS: --root . --ignore-system-fonts
 
 jobs:
   build:
