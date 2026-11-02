@@ -5,181 +5,154 @@
   tagline: [Security engineer at Memo Bank, computer engineering student],
   lang: "en",
   contacts: (
-    link("https://alix.anneraud.fr")[alix.anneraud.fr],
     link("mailto:alix@anneraud.fr")[alix\@anneraud.fr],
     [+33 7 81 85 08 69],
-    link("https://github.com/AlixANNERAUD")[github/AlixANNERAUD],
-    link("https://www.linkedin.com/in/Alix-ANNERAUD")[linkedin/Alix-ANNERAUD],
+    link("https://alix.anneraud.fr")[alix.anneraud.fr],
+    link("https://github.com/AlixANNERAUD")[GitHub],
+    link("https://www.linkedin.com/in/Alix-ANNERAUD")[LinkedIn],
   ),
-  main: [
-    #section[Experience]
+)[
+  #section[Education]
 
-    #entry(
-      [Security Engineer, work-study],
-      org: [Memo Bank],
-      url: "https://memo.bank/",
-      dates: [Sep 2026 – Aug 2027],
-      place: [Paris, France],
-    )[
-      Security engineering in a banking environment, alongside the final year of my engineering degree.
-    ]
+  #entry(
+    [INSA Rouen Normandie],
+    url: "https://www.insa-rouen.fr/",
+    dates: [2021 – 2027],
+    details: ([Diplôme d'ingénieur, computer science], [Rouen, France]),
+  )[
+    - Engineering cycle, final year in work-study.
+  ]
 
-    #entry(
-      [Network & Telecom Technician],
-      org: [Linkt],
-      url: "https://linkt.fr/",
-      dates: [Dec 2025 – Sep 2026],
-      place: [Mont-Saint-Aignan, France],
-    )[
-      - Investigated FTTH/FTTO, xDSL and 4G/5G connectivity, MPLS VPNs and SIP telephony alongside upstream operators.
-      - Troubleshot Cisco, Juniper, MikroTik and Keenetic equipment: routing, VLANs, DHCP and failover.
-      - Built a Vue/WXT browser extension to enrich support tickets and speed up diagnostics.
-    ]
+  #entry(
+    [Institution Jean-Paul II],
+    dates: [2021],
+    details: ([French baccalaureate, European section, highest honours], [Rouen, France]),
+  )[
+    - Mathematics and physics-chemistry specialties, advanced mathematics option.
+  ]
 
-    #entry(
-      [Software Engineering Intern],
-      org: [Amazon, UPMT team],
-      url: "https://amazon.jobs/content/en/teams/north-america-stores/upmt",
-      dates: [May – Aug 2025],
-      place: [Madrid, Spain],
-    )[
-      Full-stack development in marketing technology.
-      - Refactored an internal marketing tool with full ownership.
-      - *Java, Coral, Python*, *TypeScript/React* and *AWS* (Lambda, Redshift, CloudFormation, CDK, API Gateway).
-      - Large-scale systems deployed across multiple AWS regions.
-    ]
+  #section[Experience]
 
-    #entry(
-      [Research Intern],
-      org: [New York University],
-      dates: [Jun – Aug 2024],
-      place: [New York, USA],
-    )[
-      Gas source localization project.
-      - *Fluid simulations* and *localization algorithms*.
-      - *Signal processing* and *data analysis* in Python.
-      - Designed and built mobile IoT sensors in C++.
-    ]
+  #entry(
+    [Memo Bank],
+    role: [Security Engineer],
+    url: "https://memo.bank/",
+    dates: [Sep 2026 – Aug 2027],
+    details: ([Work-study], [Paris, France]),
+  )[
+    - Work on security engineering in a banking environment, alongside the final year of the degree.
+  ]
 
-    #entry(
-      [Corporate Relations Assistant],
-      org: [INSA Rouen Normandie],
-      dates: [Sep 2021 – Jun 2024],
-      place: [Rouen, France],
-    )[
-      Partner-company data collection, apprenticeship tax campaigns and administrative support.
-    ]
-  ],
-  side: [
-    #section[About]
+  #entry(
+    [Linkt],
+    role: [Network & Telecom Technician],
+    url: "https://linkt.fr/",
+    dates: [Dec 2025 – Sep 2026],
+    details: ([Mont-Saint-Aignan, France],),
+  )[
+    - Investigated FTTH/FTTO, xDSL and 4G/5G access, MPLS VPNs and SIP telephony with operators.
+    - Troubleshot Cisco, Juniper, MikroTik and Keenetic equipment: routing, VLANs, DHCP and failover.
+    - Built a Vue/WXT browser extension to enrich support tickets and speed up diagnostics.
+  ]
 
-    Software engineer focused on *systems and security*: Rust, embedded systems, networks and cloud. Two international internships, creator of the Xila operating system.
+  #entry(
+    [Amazon],
+    role: [Software Engineering Intern],
+    url: "https://amazon.jobs/content/en/teams/north-america-stores/upmt",
+    dates: [May – Aug 2025],
+    details: ([UPMT team], [Madrid, Spain]),
+  )[
+    - Owned the refactoring of an internal marketing tool, working full-stack in marketing technology.
+    - Used Java, Coral, Python, TypeScript/React and AWS (Lambda, Redshift, CloudFormation, CDK, API Gateway) on large-scale systems deployed across multiple AWS regions.
+  ]
 
-    #v(3pt)
-    *1#super[st] place* at Jeanne d'Hack CTF 2026 (tied) and Cod'INSA 2025.
+  #entry(
+    [New York University],
+    role: [Research Intern],
+    dates: [Jun – Aug 2024],
+    details: ([Gas source localization project], [New York, USA]),
+  )[
+    - Worked on fluid simulations and localization algorithms.
+    - Performed signal processing and data analysis in Python.
+    - Designed and built mobile IoT sensors in C++.
+  ]
 
-    #section[Education]
+  #entry(
+    [INSA Rouen Normandie],
+    role: [Corporate Relations Assistant],
+    dates: [Sep 2021 – Jun 2024],
+    details: ([Rouen, France],),
+  )[
+    - Collected partner-company data and assisted with apprenticeship tax campaigns and administration.
+  ]
 
-    #entry(
-      [Diplôme d'ingénieur, computer science],
-      org: [INSA Rouen Normandie],
-      url: "https://www.insa-rouen.fr/",
-      dates: [2021 – 2027],
-    )[
-      Engineering cycle, final year in work-study.
-    ]
+  #section[Projects and Awards]
 
-    #entry(
-      [French baccalaureate, European section],
-      org: [Institution Jean-Paul II, Rouen],
-      dates: [2021],
-    )[
-      Mathematics and physics-chemistry specialties, advanced mathematics option. Highest honours.
-    ]
+  #entry(
+    [Xila],
+    url: "https://xila.dev",
+    at: [xila.dev],
+    dates: [Rust, WebAssembly, LVGL],
+  )[
+    - Created a modular, open-source OS for microcontrollers in Rust, running WebAssembly applications.
+  ]
 
-    #section[Languages]
+  #entry(
+    [ThéraPIC],
+    role: [Project Lead],
+    url: "https://www.becquerel.fr/",
+    at: [Centre Henri Becquerel],
+    dates: [Vue.js, Django, PostgreSQL, Docker],
+  )[
+    - Led a 6-person agile team (\~20~h/week) building a prescription-review app for clinical pharmacists.
+  ]
 
-    #let lang-row(name, level) = grid(
-      columns: (1fr, auto),
-      text(weight: "semibold", name), text(fill: muted, level),
-    )
-    #lang-row[French][Native]
-    #lang-row[English][Fluent, TOEIC 975 (C1)]
-    #lang-row[Spanish][Basic (A2)]
-    #lang-row[German][Basic (A2)]
+  #entry(
+    [Infrastructure],
+    url: "https://github.com/AlixANNERAUD/infrastructure",
+    at: [GitHub],
+    dates: [Ansible, Docker, TrueNAS, Debian, Grafana],
+  )[
+    - Self-host services on a TrueNAS server and a VPS, deployed with Ansible and Docker Compose.
+  ]
 
-    #section[Skills]
+  #entry(
+    [Mini Train Store],
+    url: "https://github.com/AlixANNERAUD/mini_train_store",
+    at: [GitHub],
+    dates: [Odoo, Docker, Vue.js, WXT],
+  )[
+    - Built a self-hosted Odoo shop for a family model railway business, with an extension collecting its listings.
+  ]
 
-    #block(par(leading: 0.65em, tags[Rust][C/C++][Python][Java][TypeScript][Vue.js][React][Django][AWS][Docker][CI/CD][Linux][Networking][Embedded systems][Security][Deep learning]))
+  #entry(
+    [Deez'Nalyzer],
+    url: "https://github.com/AlixANNERAUD/deez_nalyzer",
+    at: [GitHub],
+    dates: [Vue.js, Django, ML, Deezer API],
+  )[
+    - Built a web app that generates playlists and classifies tracks from MP3 analysis and listening habits.
+  ]
 
-    #v(4pt)
-    #text(fill: muted)[Problem-solving, autonomy, teamwork, adaptability. Driving licence.]
-  ],
-  bottom: [
-    #section[Projects]
+  #entry(
+    [Evidential occupancy mapping],
+    url: "https://github.com/AlixANNERAUD/Evidential_occupancy_map",
+    at: [GitHub],
+    dates: [C++, ROS],
+  )[
+    - Implemented real-time evidential occupancy grid mapping (EOGM) based on Dempster-Shafer theory.
+  ]
 
-    #grid(
-      columns: (1fr, 1fr, 1fr),
-      column-gutter: 14pt,
-      row-gutter: 10pt,
-      entry(
-        [Xila],
-        org: [xila.dev],
-        url: "https://xila.dev",
-      )[
-        Modular, open-source operating system for microcontrollers, written in Rust and running WebAssembly applications.
-        #v(1pt)
-        #tags[Rust][WebAssembly][LVGL]
-      ],
-      entry(
-        [Infrastructure],
-        org: [GitHub],
-        url: "https://github.com/AlixANNERAUD/infrastructure",
-      )[
-        Self-hosted services on a TrueNAS server and a VPS, deployed with Ansible and Docker Compose, monitored with Grafana.
-        #v(1pt)
-        #tags[Ansible][Docker][TrueNAS][Debian]
-      ],
+  #entry([Jeanne d'Hack CTF], role: [1#super[st] place (tied)], dates: [2026])[]
+  #entry([Cod'INSA], role: [1#super[st] place], dates: [2025])[]
 
-      entry(
-        [ThéraPIC, project lead],
-        org: [Centre Henri Becquerel],
-        url: "https://www.becquerel.fr/",
-      )[
-        Led a 6-person agile team (\~20~h/week) building a prescription-review app for clinical pharmacists.
-        #v(1pt)
-        #tags[Vue.js][Django][PostgreSQL][Docker]
-      ],
+  #section[Skills and Languages]
 
-      entry(
-        [Mini Train Store],
-        org: [GitHub],
-        url: "https://github.com/AlixANNERAUD/mini_train_store",
-      )[
-        Self-hosted Odoo shop for a family model railway business, plus a browser extension that collects its listings.
-        #v(1pt)
-        #tags[Odoo][Docker][Vue.js][WXT]
-      ],
+  #row[Technical][Rust, C/C++, Python, Java, TypeScript, Vue.js, React, Django, AWS, Docker, CI/CD, Linux, networking, embedded systems, security, deep learning.]
+  #row[Languages][French (native), English (fluent, TOEIC 975, C1), Spanish and German (basic, A2).]
+  #row[Other][Problem-solving, autonomy, teamwork, adaptability. Driving licence.]
 
-      entry(
-        [Deez'Nalyzer],
-        org: [GitHub],
-        url: "https://github.com/AlixANNERAUD/deez_nalyzer",
-      )[
-        Web app that generates playlists and classifies tracks from MP3 analysis and listening habits, using the Deezer API.
-        #v(1pt)
-        #tags[Vue.js][Django][ML]
-      ],
+  #section[Interests]
 
-      entry(
-        [Evidential occupancy mapping],
-        org: [GitHub],
-        url: "https://github.com/AlixANNERAUD/Evidential_occupancy_map",
-      )[
-        Real-time evidential occupancy grid mapping (EOGM) based on Dempster-Shafer theory.
-        #v(1pt)
-        #tags[C++][ROS]
-      ],
-    )
-  ],
-)
+  Systems and security: Rust, embedded systems, networks and cloud.
+]

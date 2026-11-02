@@ -1,119 +1,77 @@
 // Resume layout shared by the English and French versions.
-// Colours and fonts follow the portfolio (alix.anneraud.fr): Newsreader for
-// text, JetBrains Mono for labels and dates, one blue accent.
+// A sober single-column layout: one classic serif (New Computer Modern),
+// black text with grey details, bold headings over a thin full-width rule.
 
-#let ink = rgb("#1e2f41")
-#let muted = rgb("#4d5969")
-#let subtle = rgb("#626975")
-#let rule-color = rgb("#dbdee5")
-#let accent = rgb("#334fb8")
-#let tag-fill = rgb("#f0f2f8")
+#let serif = "New Computer Modern"
+#let detail = luma(90)
 
-#let serif = "Newsreader 16pt"
-#let mono = "JetBrains Mono"
+// Middle dot between items on one line.
+#let sep = [#h(0.4em)·#h(0.4em)]
 
-// Small uppercase mono label, used for section titles and dates.
-#let label(body, color: subtle, size: 7pt) = text(
-  font: mono,
-  size: size,
-  weight: "medium",
-  tracking: 0.06em,
-  fill: color,
-  upper(body),
-)
-
-#let tag(body) = box(
-  fill: tag-fill,
-  radius: 2pt,
-  inset: (x: 4pt, y: 2.2pt),
-  text(font: mono, size: 6.6pt, fill: muted, body),
-)
-
-#let tags(..items) = items.pos().map(tag).join(h(3pt))
-
-// Section heading: numbered mono label followed by a thin rule.
-#let section-counter = counter("section")
+// Section heading: bold title over a thin full-width rule.
 #let section(title) = {
-  section-counter.step()
-  v(12pt)
-  grid(
-    columns: (auto, 1fr),
-    column-gutter: 6pt,
-    align: horizon,
-    context label(
-      color: accent,
-      size: 7.4pt,
-    )[#numbering("01", section-counter.get().first()) / #title],
-    line(length: 100%, stroke: 0.5pt + rule-color),
+  v(10pt, weak: true)
+  block(below: 6pt, sticky: true, stack(
+    spacing: 3pt,
+    text(size: 12pt, weight: "bold", title),
+    line(length: 100%, stroke: 0.5pt),
+  ))
+}
+
+#let bold-link(url, body) = {
+  let body = text(weight: "bold", body)
+  if url != none { link(url, body) } else { body }
+}
+
+// One school, role, project or award:
+// - first line: organisation (bold, linked) and role, then an optional grey
+//   context (`at`); dates (or a project's technologies) in grey on the right;
+// - second line, optional: grey details joined by middle dots;
+// - then the bullets.
+#let entry(title, role: none, at: none, dates: none, details: (), url: none, body) = block(
+  breakable: false,
+  below: 7.5pt,
+)[
+  #grid(
+    columns: (1fr, auto),
+    column-gutter: 10pt,
+    [#bold-link(url, title)#if role != none [#sep#strong(role)]#if at != none {
+        text(fill: detail)[#sep#at]
+      }],
+    text(fill: detail, dates),
   )
-  v(7pt)
-}
+  #if details.len() > 0 {
+    v(0.4em, weak: true)
+    text(fill: detail, details.join(sep))
+  }
+  #v(0.4em, weak: true)
+  #body
+]
 
-// One role, degree or project: title and organisation on the left,
-// dates and place on the right, then free content.
-#let entry(title, org: none, url: none, dates: none, place: none, body) = {
-  block(breakable: false, below: 11pt)[
-    #grid(
-      columns: (1fr, auto),
-      column-gutter: 8pt,
-      row-gutter: 3pt,
-      text(size: 11pt, weight: "semibold", fill: ink, title),
-      align(right, if dates != none { label(dates) }),
+// Labelled line, with a hanging indent. French takes a no-break space before
+// the colon.
+#let row(label, body) = par(hanging-indent: 1em)[
+  #context strong(if text.lang == "fr" [#label~:] else [#label:]) #body
+]
 
-      if org != none {
-        let name = text(size: 9.8pt, fill: accent, weight: "medium", org)
-        if url != none { link(url, name) } else { name }
-      },
-      align(right, if place != none { text(size: 8.4pt, fill: subtle, place) }),
-    )
-    #v(3pt)
-    #set text(size: 9.9pt, fill: muted)
-    #body
-  ]
-}
-
-#let resume(
-  name: "",
-  tagline: "",
-  contacts: (),
-  photo: none,
-  lang: "en",
-  main: [],
-  side: [],
-  bottom: none,
-) = {
+#let resume(name: "", tagline: none, contacts: (), lang: "en", body) = {
   set document(title: name + " - Resume", author: name)
-  set page(paper: "a4", margin: (x: 1.35cm, top: 1.15cm, bottom: 1cm))
-  set text(font: serif, size: 9.9pt, fill: ink, lang: lang)
-  set par(leading: 0.5em, spacing: 0.7em, justify: false)
-  set list(marker: text(fill: accent, size: 7pt, baseline: -1pt)[▪], indent: 1pt, body-indent: 5pt, spacing: 0.55em)
+  set page(paper: "a4", margin: (x: 0.65in, top: 0.5in, bottom: 0.55in))
+  set text(font: serif, size: 10pt, lang: lang)
+  set par(leading: 0.5em, spacing: 0.5em, justify: false)
+  set list(marker: [•], indent: 0.3em, body-indent: 0.55em, spacing: 0.5em)
   show link: it => it
 
-  // Header
-  grid(
-    columns: if photo != none { (1fr, auto) } else { (1fr,) },
-    column-gutter: 14pt,
-    align: horizon,
-    [
-      #text(size: 26pt, weight: "medium", fill: ink, tracking: -0.01em, name)
-      #v(-12pt)
-      #text(size: 12pt, style: "italic", fill: accent, tagline)
-      #v(-2pt)
-      #text(font: mono, size: 7.2pt, fill: muted, contacts.join(h(5pt) + text(fill: rule-color)[|] + h(5pt)))
-    ],
-    ..if photo != none {
-      (box(clip: true, radius: 50%, width: 1.9cm, height: 1.9cm, photo),)
-    },
-  )
-  v(2pt)
-  line(length: 100%, stroke: 1.4pt + accent)
+  align(center)[
+    #text(size: 17pt, weight: "bold", tracking: 0.03em, upper(name))
+    #v(0.6em, weak: true)
+    #contacts.join(sep)
+    #if tagline != none {
+      v(0.5em, weak: true)
+      emph(tagline)
+    }
+  ]
+  v(4pt)
 
-  grid(
-    columns: (1fr, 0.64fr),
-    column-gutter: 0.8cm,
-    main, side,
-  )
-
-  // Optional full-width band below the two columns (projects).
-  if bottom != none { bottom }
+  body
 }
