@@ -2,7 +2,7 @@
 
 My curriculum vitae, in English and French, written with [Typst](https://typst.app/).
 
-- `template.typ`: shared single-column A4 layout in the sober style of the Harvard graduate resume template: one serif, black text with grey details, bold section headings over a thin rule.
+- `template.typ`: shared single-column A4 layout with one serif, black text with grey details, bold section headings over a thin rule.
 - `English/Resume.typ` and `Français/Resume.typ`: the content of each version.
 
 ## Build locally

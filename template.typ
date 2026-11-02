@@ -1,7 +1,6 @@
 // Resume layout shared by the English and French versions.
-// A sober single-column layout in the spirit of the Harvard graduate resume
-// template: one classic serif (New Computer Modern), black text with grey
-// details, bold headings over a thin full-width rule.
+// A sober single-column layout: one classic serif (New Computer Modern),
+// black text with grey details, bold headings over a thin full-width rule.
 
 #let serif = "New Computer Modern"
 #let detail = luma(90)
