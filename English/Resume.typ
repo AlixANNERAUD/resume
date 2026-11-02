@@ -2,13 +2,14 @@
 
 #resume(
   name: "Alix ANNERAUD",
+  tagline: [Security engineer at Memo Bank, computer engineering student],
   lang: "en",
   contacts: (
     link("mailto:alix@anneraud.fr")[alix\@anneraud.fr],
     [+33 7 81 85 08 69],
     link("https://alix.anneraud.fr")[alix.anneraud.fr],
-    link("https://github.com/AlixANNERAUD")[github.com/AlixANNERAUD],
-    link("https://www.linkedin.com/in/Alix-ANNERAUD")[linkedin.com/in/Alix-ANNERAUD],
+    link("https://github.com/AlixANNERAUD")[GitHub],
+    link("https://www.linkedin.com/in/Alix-ANNERAUD")[LinkedIn],
   ),
 )[
   #section[Education]
@@ -16,18 +17,16 @@
   #entry(
     [INSA Rouen Normandie],
     url: "https://www.insa-rouen.fr/",
-    place: [Rouen, France],
-    role: [Diplôme d'ingénieur, computer science],
     dates: [2021 – 2027],
+    details: ([Diplôme d'ingénieur, computer science], [Rouen, France]),
   )[
     - Engineering cycle, final year in work-study.
   ]
 
   #entry(
     [Institution Jean-Paul II],
-    place: [Rouen, France],
-    role: [French baccalaureate, European section, highest honours],
     dates: [2021],
+    details: ([French baccalaureate, European section, highest honours], [Rouen, France]),
   )[
     - Mathematics and physics-chemistry specialties, advanced mathematics option.
   ]
@@ -36,20 +35,20 @@
 
   #entry(
     [Memo Bank],
+    role: [Security Engineer],
     url: "https://memo.bank/",
-    place: [Paris, France],
-    role: [Security Engineer, work-study],
     dates: [Sep 2026 – Aug 2027],
+    details: ([Work-study], [Paris, France]),
   )[
     - Work on security engineering in a banking environment, alongside the final year of the degree.
   ]
 
   #entry(
     [Linkt],
-    url: "https://linkt.fr/",
-    place: [Mont-Saint-Aignan, France],
     role: [Network & Telecom Technician],
+    url: "https://linkt.fr/",
     dates: [Dec 2025 – Sep 2026],
+    details: ([Mont-Saint-Aignan, France],),
   )[
     - Investigated FTTH/FTTO, xDSL and 4G/5G access, MPLS VPNs and SIP telephony with operators.
     - Troubleshot Cisco, Juniper, MikroTik and Keenetic equipment: routing, VLANs, DHCP and failover.
@@ -58,10 +57,10 @@
 
   #entry(
     [Amazon],
+    role: [Software Engineering Intern],
     url: "https://amazon.jobs/content/en/teams/north-america-stores/upmt",
-    place: [Madrid, Spain],
-    role: [Software Engineering Intern, UPMT team],
     dates: [May – Aug 2025],
+    details: ([UPMT team], [Madrid, Spain]),
   )[
     - Owned the refactoring of an internal marketing tool, working full-stack in marketing technology.
     - Used Java, Coral, Python, TypeScript/React and AWS (Lambda, Redshift, CloudFormation, CDK, API Gateway) on large-scale systems deployed across multiple AWS regions.
@@ -69,9 +68,9 @@
 
   #entry(
     [New York University],
-    place: [New York, USA],
-    role: [Research Intern, gas source localization project],
+    role: [Research Intern],
     dates: [Jun – Aug 2024],
+    details: ([Gas source localization project], [New York, USA]),
   )[
     - Worked on fluid simulations and localization algorithms.
     - Performed signal processing and data analysis in Python.
@@ -80,74 +79,80 @@
 
   #entry(
     [INSA Rouen Normandie],
-    place: [Rouen, France],
     role: [Corporate Relations Assistant],
     dates: [Sep 2021 – Jun 2024],
+    details: ([Rouen, France],),
   )[
     - Collected partner-company data and assisted with apprenticeship tax campaigns and administration.
   ]
 
-  #section[Selected Projects]
+  #section[Projects and Awards]
 
-  #project(
+  #entry(
     [Xila],
-    org: [xila.dev],
     url: "https://xila.dev",
-    tech: [Rust, WebAssembly, LVGL],
+    at: [xila.dev],
+    dates: [Rust, WebAssembly, LVGL],
   )[
     - Created a modular, open-source OS for microcontrollers in Rust, running WebAssembly applications.
   ]
 
-  #project(
+  #entry(
     [ThéraPIC],
-    org: [project lead, Centre Henri Becquerel],
+    role: [Project Lead],
     url: "https://www.becquerel.fr/",
-    tech: [Vue.js, Django, PostgreSQL, Docker],
+    at: [Centre Henri Becquerel],
+    dates: [Vue.js, Django, PostgreSQL, Docker],
   )[
     - Led a 6-person agile team (\~20~h/week) building a prescription-review app for clinical pharmacists.
   ]
 
-  #project(
+  #entry(
     [Infrastructure],
-    org: [GitHub],
     url: "https://github.com/AlixANNERAUD/infrastructure",
-    tech: [Ansible, Docker, TrueNAS, Debian, Grafana],
+    at: [GitHub],
+    dates: [Ansible, Docker, TrueNAS, Debian, Grafana],
   )[
     - Self-host services on a TrueNAS server and a VPS, deployed with Ansible and Docker Compose.
   ]
 
-  #project(
+  #entry(
     [Mini Train Store],
-    org: [GitHub],
     url: "https://github.com/AlixANNERAUD/mini_train_store",
-    tech: [Odoo, Docker, Vue.js, WXT],
+    at: [GitHub],
+    dates: [Odoo, Docker, Vue.js, WXT],
   )[
-    - Built a self-hosted Odoo shop for a family model railway business and a browser extension collecting its listings.
+    - Built a self-hosted Odoo shop for a family model railway business, with an extension collecting its listings.
   ]
 
-  #project(
+  #entry(
     [Deez'Nalyzer],
-    org: [GitHub],
     url: "https://github.com/AlixANNERAUD/deez_nalyzer",
-    tech: [Vue.js, Django, ML, Deezer API],
+    at: [GitHub],
+    dates: [Vue.js, Django, ML, Deezer API],
   )[
     - Built a web app that generates playlists and classifies tracks from MP3 analysis and listening habits.
   ]
 
-  #project(
+  #entry(
     [Evidential occupancy mapping],
-    org: [GitHub],
     url: "https://github.com/AlixANNERAUD/Evidential_occupancy_map",
-    tech: [C++, ROS],
+    at: [GitHub],
+    dates: [C++, ROS],
   )[
     - Implemented real-time evidential occupancy grid mapping (EOGM) based on Dempster-Shafer theory.
   ]
 
-  #section[Skills & Interests]
+  #entry([Jeanne d'Hack CTF], role: [1#super[st] place (tied)], dates: [2026])[]
+  #entry([Cod'INSA], role: [1#super[st] place], dates: [2025])[]
 
-  #row[Languages][French (native); English (fluent, TOEIC 975, C1); Spanish and German (basic, A2).]
+  #section[Skills and Languages]
+
   #row[Technical][Rust, C/C++, Python, Java, TypeScript, Vue.js, React, Django, AWS, Docker, CI/CD, Linux, networking, embedded systems, security, deep learning.]
-  #row[Awards][1#super[st] place at Jeanne d'Hack CTF 2026 (tied) and Cod'INSA 2025.]
-  #row[Interests][Systems and security, Rust, embedded systems, networks and cloud.]
+  #row[Languages][French (native), English (fluent, TOEIC 975, C1), Spanish and German (basic, A2).]
   #row[Other][Problem-solving, autonomy, teamwork, adaptability. Driving licence.]
+
+  #section[Interests]
+
+  Systems and security: Rust, embedded systems, networks and cloud.
 ]

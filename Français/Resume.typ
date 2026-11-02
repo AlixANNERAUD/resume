@@ -2,13 +2,14 @@
 
 #resume(
   name: "Alix ANNERAUD",
+  tagline: [Ingénieur sécurité chez Memo Bank, élève-ingénieur en informatique],
   lang: "fr",
   contacts: (
     link("mailto:alix@anneraud.fr")[alix\@anneraud.fr],
     [07~81~85~08~69],
     link("https://alix.anneraud.fr/fr/")[alix.anneraud.fr],
-    link("https://github.com/AlixANNERAUD")[github.com/AlixANNERAUD],
-    link("https://www.linkedin.com/in/Alix-ANNERAUD")[linkedin.com/in/Alix-ANNERAUD],
+    link("https://github.com/AlixANNERAUD")[GitHub],
+    link("https://www.linkedin.com/in/Alix-ANNERAUD")[LinkedIn],
   ),
 )[
   #section[Formation]
@@ -16,40 +17,38 @@
   #entry(
     [INSA Rouen Normandie],
     url: "https://www.insa-rouen.fr/",
-    place: [Rouen, France],
-    role: [Diplôme d’ingénieur en informatique],
     dates: [2021 – 2027],
+    details: ([Diplôme d’ingénieur en informatique], [Rouen, France]),
   )[
     - Cycle ingénieur, dernière année en alternance.
   ]
 
   #entry(
     [Institution Jean-Paul II],
-    place: [Rouen, France],
-    role: [Baccalauréat général, section européenne, mention~très~bien],
     dates: [2021],
+    details: ([Baccalauréat général, section européenne, mention~très~bien], [Rouen, France]),
   )[
     - Spécialités mathématiques et physique-chimie, option mathématiques expertes.
   ]
 
-  #section[Expérience professionnelle]
+  #section[Expérience]
 
   #entry(
     [Memo Bank],
+    role: [Ingénieur sécurité],
     url: "https://memo.bank/",
-    place: [Paris, France],
-    role: [Ingénieur sécurité, alternance],
     dates: [Sept. 2026 – Août 2027],
+    details: ([Alternance], [Paris, France]),
   )[
     - Ingénierie sécurité dans l’environnement d’une banque, en parallèle de la dernière année du diplôme.
   ]
 
   #entry(
     [Linkt],
-    url: "https://linkt.fr/",
-    place: [Mont-Saint-Aignan, France],
     role: [Technicien réseau et télécoms],
+    url: "https://linkt.fr/",
     dates: [Déc. 2025 – Sept. 2026],
+    details: ([Mont-Saint-Aignan, France],),
   )[
     - Diagnostic des accès FTTH/FTTO, xDSL et 4G/5G, VPN MPLS et téléphonie SIP, avec les opérateurs.
     - Dépannage d’équipements Cisco, Juniper, MikroTik et Keenetic~: routage, VLAN, DHCP et redondance.
@@ -58,10 +57,10 @@
 
   #entry(
     [Amazon],
+    role: [Stagiaire en ingénierie logicielle],
     url: "https://amazon.jobs/content/en/teams/north-america-stores/upmt",
-    place: [Madrid, Espagne],
-    role: [Stagiaire en ingénierie logicielle, équipe UPMT],
     dates: [Mai – Août 2025],
+    details: ([Équipe UPMT], [Madrid, Espagne]),
   )[
     - Développement full-stack en technologie marketing et refonte d’un outil interne en pleine responsabilité.
     - Utilisation de Java, Coral, Python, TypeScript/React et AWS (Lambda, Redshift, CloudFormation, CDK, API Gateway) sur des systèmes à grande échelle déployés sur plusieurs régions AWS.
@@ -69,9 +68,9 @@
 
   #entry(
     [Université de New York (NYU)],
-    place: [New York, États-Unis],
-    role: [Stagiaire en recherche, projet de localisation de sources de gaz],
+    role: [Stagiaire en recherche],
     dates: [Juin – Août 2024],
+    details: ([Projet de localisation de sources de gaz], [New York, États-Unis]),
   )[
     - Travail sur des simulations de fluides et des algorithmes de localisation.
     - Traitement du signal et analyse de données en Python.
@@ -80,74 +79,80 @@
 
   #entry(
     [INSA Rouen Normandie],
-    place: [Rouen, France],
     role: [Assistant aux relations entreprises],
     dates: [Sept. 2021 – Juin 2024],
+    details: ([Rouen, France],),
   )[
     - Collecte de données sur les entreprises partenaires, campagnes de taxe d’apprentissage et suivi administratif.
   ]
 
-  #section[Projets choisis]
+  #section[Projets et distinctions]
 
-  #project(
+  #entry(
     [Xila],
-    org: [xila.dev],
     url: "https://xila.dev",
-    tech: [Rust, WebAssembly, LVGL],
+    at: [xila.dev],
+    dates: [Rust, WebAssembly, LVGL],
   )[
     - Création d’un OS modulaire et open source pour microcontrôleurs, en Rust, qui exécute des applications WebAssembly.
   ]
 
-  #project(
+  #entry(
     [ThéraPIC],
-    org: [chef de projet, Centre Henri Becquerel],
+    role: [Chef de projet],
     url: "https://www.becquerel.fr/",
-    tech: [Vue.js, Django, PostgreSQL, Docker],
+    at: [Centre Henri Becquerel],
+    dates: [Vue.js, Django, PostgreSQL, Docker],
   )[
     - Pilotage d’une équipe agile de 6~personnes (\~20~h/semaine) pour une application d’aide à la validation des prescriptions.
   ]
 
-  #project(
+  #entry(
     [Infrastructure],
-    org: [GitHub],
     url: "https://github.com/AlixANNERAUD/infrastructure",
-    tech: [Ansible, Docker, TrueNAS, Debian, Grafana],
+    at: [GitHub],
+    dates: [Ansible, Docker, TrueNAS, Debian, Grafana],
   )[
     - Services auto-hébergés sur un serveur TrueNAS et un VPS, déployés avec Ansible et Docker Compose.
   ]
 
-  #project(
+  #entry(
     [Mini Train Store],
-    org: [GitHub],
     url: "https://github.com/AlixANNERAUD/mini_train_store",
-    tech: [Odoo, Docker, Vue.js, WXT],
+    at: [GitHub],
+    dates: [Odoo, Docker, Vue.js, WXT],
   )[
     - Boutique Odoo auto-hébergée pour une entreprise familiale de modélisme ferroviaire, et une extension qui collecte ses annonces.
   ]
 
-  #project(
+  #entry(
     [Deez’Nalyzer],
-    org: [GitHub],
     url: "https://github.com/AlixANNERAUD/deez_nalyzer",
-    tech: [Vue.js, Django, ML, API Deezer],
+    at: [GitHub],
+    dates: [Vue.js, Django, ML, API Deezer],
   )[
     - Application web qui génère des playlists et classe des morceaux selon l’analyse des MP3 et les habitudes d’écoute.
   ]
 
-  #project(
+  #entry(
     [Cartographie évidentielle],
-    org: [GitHub],
     url: "https://github.com/AlixANNERAUD/Evidential_occupancy_map",
-    tech: [C++, ROS],
+    at: [GitHub],
+    dates: [C++, ROS],
   )[
     - Grille d’occupation évidentielle (EOGM) en temps réel, fondée sur la théorie de Dempster-Shafer.
   ]
 
-  #section[Compétences et centres d’intérêt]
+  #entry([Jeanne d’Hack CTF], role: [1#super[re] place (ex~æquo)], dates: [2026])[]
+  #entry([Cod’INSA], role: [1#super[re] place], dates: [2025])[]
 
-  #row[Langues][Français (langue maternelle)\u{202F}; anglais (courant, TOEIC 975, C1)\u{202F}; espagnol et allemand (notions, A2).]
+  #section[Compétences et langues]
+
   #row[Informatique][Rust, C/C++, Python, Java, TypeScript, Vue.js, React, Django, AWS, Docker, CI/CD, Linux, réseaux, systèmes embarqués, sécurité, deep learning.]
-  #row[Distinctions][1#super[re] place au Jeanne d’Hack CTF 2026 (ex~æquo) et à Cod’INSA 2025.]
-  #row[Centres d’intérêt][Systèmes et sécurité, Rust, systèmes embarqués, réseaux et cloud.]
+  #row[Langues][Français (langue maternelle), anglais (courant, TOEIC 975, C1), espagnol et allemand (notions, A2).]
   #row[Divers][Autodidacte, rigueur, esprit d’équipe, sens des responsabilités, ténacité. Permis B.]
+
+  #section[Centres d’intérêt]
+
+  Systèmes et sécurité~: Rust, systèmes embarqués, réseaux et cloud.
 ]

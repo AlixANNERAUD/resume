@@ -2,7 +2,7 @@
 
 My curriculum vitae, in English and French, written with [Typst](https://typst.app/).
 
-- `template.typ`: shared single-column A4 layout, modelled on the sober Harvard graduate resume template: black on white, one serif, ruled section headings.
+- `template.typ`: shared single-column A4 layout in the sober style of the Harvard graduate resume template: one serif, black text with grey details, bold section headings over a thin rule.
 - `English/Resume.typ` and `Français/Resume.typ`: the content of each version.
 
 ## Build locally
@@ -18,7 +18,7 @@ Use `typst watch` with the same arguments to rebuild on every change. Each versi
 
 ## Fonts
 
-The text is set in [Libertinus Serif](https://github.com/alerque/libertinus), which ships inside the Typst binary, so no font files are needed. `--ignore-system-fonts` keeps the output identical everywhere. Libertinus Serif is licensed under the SIL Open Font License 1.1.
+The text is set in New Computer Modern, the Computer Modern design of LaTeX, which ships inside the Typst binary, so no font files are needed. `--ignore-system-fonts` keeps the output identical everywhere. New Computer Modern is licensed under the GUST Font License.
 
 ## Deployment
 
