@@ -18,9 +18,10 @@
     [INSA Rouen Normandie],
     url: "https://www.insa-rouen.fr/",
     dates: [2021 – 2027],
-    details: ([Diplôme d’ingénieur en informatique], [Rouen, France]),
+    details: ([Diplôme d’ingénieur, Informatique et technologies de l’information], [Rouen, France]),
   )[
-    - Cycle ingénieur, dernière année en alternance.
+    - Cycle ingénieur après le cycle préparatoire intégré de deux ans, dernière année en alternance.
+    - Cours~: systèmes d’exploitation, compilation, traitement du signal, machine learning, deep learning, big data.
   ]
 
   #entry(
@@ -62,8 +63,8 @@
     dates: [Mai – Août 2025],
     details: ([Équipe UPMT], [Madrid, Espagne]),
   )[
-    - Développement full-stack en technologie marketing et refonte d’un outil interne en pleine responsabilité.
-    - Utilisation de Java, Coral, Python, TypeScript/React et AWS (Lambda, Redshift, CloudFormation, CDK, API Gateway) sur des systèmes à grande échelle déployés sur plusieurs régions AWS.
+    - Modernisation d’un outil interne d’investigation de contenus pour des équipes marketing.
+    - Amélioration des parcours et des recherches\u{202F}; extension multirégion (Java, Python, React, AWS).
   ]
 
   #entry(
@@ -72,9 +73,9 @@
     dates: [Juin – Août 2024],
     details: ([Projet de localisation de sources de gaz], [New York, États-Unis]),
   )[
-    - Travail sur des simulations de fluides et des algorithmes de localisation.
-    - Traitement du signal et analyse de données en Python.
-    - Conception et fabrication de capteurs IoT mobiles en C++.
+    - Simulation de la diffusion par différences finies et algorithmes de localisation en présence de bruit.
+    - Nœuds capteurs ESP32 en C++ qui publient en MQTT les mesures de capteurs de gaz MQ.
+    - Traitement en Python~: filtrage à phase nulle, retards par intercorrélation et ajustement de type TDOA.
   ]
 
   #entry(
@@ -83,7 +84,7 @@
     dates: [Sept. 2021 – Juin 2024],
     details: ([Rouen, France],),
   )[
-    - Collecte de données sur les entreprises partenaires, campagnes de taxe d’apprentissage et suivi administratif.
+    - Maintenance des données entreprises et anciens élèves, appui aux campagnes de taxe d’apprentissage.
   ]
 
   #section[Projets et distinctions]
@@ -94,7 +95,25 @@
     at: [xila.dev],
     dates: [Rust, WebAssembly, LVGL],
   )[
-    - Création d’un OS modulaire et open source pour microcontrôleurs, en Rust, qui exécute des applications WebAssembly.
+    - Création d’un OS Rust open source pour microcontrôleurs, avec des applications WebAssembly sur Wasmi.
+  ]
+
+  #entry(
+    [Bibliothèques open source],
+    url: "https://github.com/AlixANNERAUD",
+    at: [crates.io],
+    dates: [Rust, C99, no_std],
+  )[
+    - battery-percent (C99 avec liaisons Rust no_std), nanoexpr, nanoaudio, embedded-i18n, getargs-derive.
+  ]
+
+  #entry(
+    [Contributions open source],
+    url: "https://github.com/AlixANNERAUD",
+    at: [GitHub],
+    dates: [2024 – 2026],
+  )[
+    - WAMR (comptage d’instructions\u{202F}; prise en charge de l’ESP32 dans son SDK Rust), Embassy (RwLock), #box[esp-idf-svc] (pilote~de~carte~SD), liaisons Rust de LVGL, smolvm.
   ]
 
   #entry(
@@ -102,9 +121,9 @@
     role: [Chef de projet],
     url: "https://www.becquerel.fr/",
     at: [Centre Henri Becquerel],
-    dates: [Vue.js, Django, PostgreSQL, Docker],
+    dates: [Django, Vue.js, PostgreSQL, Docker],
   )[
-    - Pilotage d’une équipe agile de 6~personnes (\~20~h/semaine) pour une application d’aide à la validation des prescriptions.
+    - Pilotage d’une équipe agile de 6~personnes (\~20~h/semaine) pour une application d’aide à la validation des prescriptions destinée aux pharmaciens cliniciens.
   ]
 
   #entry(
@@ -122,16 +141,16 @@
     at: [GitHub],
     dates: [Odoo, Docker, Vue.js, WXT],
   )[
-    - Boutique Odoo auto-hébergée pour une entreprise familiale de modélisme ferroviaire, et une extension qui collecte ses annonces.
+    - Boutique Odoo d’un commerce familial de trains miniatures et extension qui collecte ses annonces Leboncoin.
   ]
 
   #entry(
     [Deez’Nalyzer],
     url: "https://github.com/AlixANNERAUD/deez_nalyzer",
-    at: [GitHub],
-    dates: [Vue.js, Django, ML, API Deezer],
+    at: [Équipe de trois],
+    dates: [Python, Django, Vue.js, ML],
   )[
-    - Application web qui génère des playlists et classe des morceaux selon l’analyse des MP3 et les habitudes d’écoute.
+    - Représentations audio MERT d’extraits Deezer pour explorer les morceaux en 3D et prédire leurs genres.
   ]
 
   #entry(
@@ -140,7 +159,7 @@
     at: [GitHub],
     dates: [C++, ROS],
   )[
-    - Grille d’occupation évidentielle (EOGM) en temps réel, fondée sur la théorie de Dempster-Shafer.
+    - Nœud ROS qui fusionne LiDAR et odométrie dans une grille d’occupation évidentielle (Dempster-Shafer).
   ]
 
   #entry([Jeanne d’Hack CTF], role: [1#super[re] place (ex~æquo)], dates: [2026])[]
@@ -150,9 +169,5 @@
 
   #row[Informatique][Rust, C/C++, Python, Java, TypeScript, Vue.js, React, Django, AWS, Docker, CI/CD, Linux, réseaux, systèmes embarqués, sécurité, deep learning.]
   #row[Langues][Français (langue maternelle), anglais (courant, TOEIC 975, C1), espagnol et allemand (notions, A2).]
-  #row[Divers][Autodidacte, rigueur, esprit d’équipe, sens des responsabilités, ténacité. Permis B.]
-
-  #section[Centres d’intérêt]
-
-  Systèmes et sécurité~: Rust, systèmes embarqués, réseaux et cloud.
+  #row[Permis de conduire][B.]
 ]
