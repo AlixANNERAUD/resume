@@ -18,15 +18,16 @@
     [INSA Rouen Normandie],
     url: "https://www.insa-rouen.fr/",
     dates: [2021 – 2027],
-    details: ([Diplôme d'ingénieur, computer science], [Rouen, France]),
+    details: ([Engineering degree, Computer Science and Information Technology], [Rouen, France]),
   )[
-    - Engineering cycle, final year in work-study.
+    - Engineering cycle after the two-year integrated preparatory cycle; final year in work-study.
+    - Coursework: operating systems, compilers, signal processing, machine learning, deep learning, big data.
   ]
 
   #entry(
     [Institution Jean-Paul II],
     dates: [2021],
-    details: ([French baccalaureate, European section, highest honours], [Rouen, France]),
+    details: ([French general baccalaureate, European section, highest honours], [Rouen, France]),
   )[
     - Mathematics and physics-chemistry specialties, advanced mathematics option.
   ]
@@ -52,7 +53,7 @@
   )[
     - Investigated FTTH/FTTO, xDSL and 4G/5G access, MPLS VPNs and SIP telephony with operators.
     - Troubleshot Cisco, Juniper, MikroTik and Keenetic equipment: routing, VLANs, DHCP and failover.
-    - Built a Vue/WXT browser extension to enrich support tickets and speed up diagnostics.
+    - Built a Vue/WXT browser extension to enrich support tickets and streamline diagnostics.
   ]
 
   #entry(
@@ -62,8 +63,8 @@
     dates: [May – Aug 2025],
     details: ([UPMT team], [Madrid, Spain]),
   )[
-    - Owned the refactoring of an internal marketing tool, working full-stack in marketing technology.
-    - Used Java, Coral, Python, TypeScript/React and AWS (Lambda, Redshift, CloudFormation, CDK, API Gateway) on large-scale systems deployed across multiple AWS regions.
+    - Modernized an internal content discovery and investigation tool for marketing teams.
+    - Improved workflows and search performance; extended multi-region support (Java, Python, React, AWS).
   ]
 
   #entry(
@@ -72,9 +73,9 @@
     dates: [Jun – Aug 2024],
     details: ([Gas source localization project], [New York, USA]),
   )[
-    - Worked on fluid simulations and localization algorithms.
-    - Performed signal processing and data analysis in Python.
-    - Designed and built mobile IoT sensors in C++.
+    - Simulated gas diffusion with finite differences and explored localization algorithms under noisy measurements.
+    - Built ESP32 sensor nodes in C++ that publish MQ gas sensor readings over MQTT.
+    - Processed the signals in Python: zero-phase filtering, cross-correlation delays and a TDOA-style position fit.
   ]
 
   #entry(
@@ -83,7 +84,7 @@
     dates: [Sep 2021 – Jun 2024],
     details: ([Rouen, France],),
   )[
-    - Collected partner-company data and assisted with apprenticeship tax campaigns and administration.
+    - Maintained partner-company and alumni data and supported apprenticeship tax campaigns.
   ]
 
   #section[Projects and Awards]
@@ -94,7 +95,25 @@
     at: [xila.dev],
     dates: [Rust, WebAssembly, LVGL],
   )[
-    - Created a modular, open-source OS for microcontrollers in Rust, running WebAssembly applications.
+    - Created an open-source Rust OS for microcontrollers that runs WebAssembly apps on Wasmi.
+  ]
+
+  #entry(
+    [Open-source libraries],
+    url: "https://github.com/AlixANNERAUD",
+    at: [crates.io],
+    dates: [Rust, C99, no_std],
+  )[
+    - battery-percent (C99 with no_std Rust bindings), nanoexpr, nanoaudio, embedded-i18n, getargs-derive.
+  ]
+
+  #entry(
+    [Open-source contributions],
+    url: "https://github.com/AlixANNERAUD",
+    at: [GitHub],
+    dates: [2024 – 2026],
+  )[
+    - WAMR (instruction metering; ESP32 support in its Rust SDK), Embassy (RwLock), #box[esp-idf-svc] (SD~card~driver), LVGL Rust bindings, smolvm.
   ]
 
   #entry(
@@ -102,7 +121,7 @@
     role: [Project Lead],
     url: "https://www.becquerel.fr/",
     at: [Centre Henri Becquerel],
-    dates: [Vue.js, Django, PostgreSQL, Docker],
+    dates: [Django, Vue.js, PostgreSQL, Docker],
   )[
     - Led a 6-person agile team (\~20~h/week) building a prescription-review app for clinical pharmacists.
   ]
@@ -122,16 +141,16 @@
     at: [GitHub],
     dates: [Odoo, Docker, Vue.js, WXT],
   )[
-    - Built a self-hosted Odoo shop for a family model railway business, with an extension collecting its listings.
+    - Built an Odoo shop for a family model railway business, with an extension collecting its Leboncoin listings.
   ]
 
   #entry(
     [Deez'Nalyzer],
     url: "https://github.com/AlixANNERAUD/deez_nalyzer",
-    at: [GitHub],
-    dates: [Vue.js, Django, ML, Deezer API],
+    at: [Team of three],
+    dates: [Python, Django, Vue.js, ML],
   )[
-    - Built a web app that generates playlists and classifies tracks from MP3 analysis and listening habits.
+    - Turned Deezer previews into MERT audio embeddings to explore songs in 3D and predict genres.
   ]
 
   #entry(
@@ -140,7 +159,7 @@
     at: [GitHub],
     dates: [C++, ROS],
   )[
-    - Implemented real-time evidential occupancy grid mapping (EOGM) based on Dempster-Shafer theory.
+    - Fused LiDAR scans and odometry into an evidential occupancy grid (Dempster-Shafer) in a ROS node.
   ]
 
   #entry([Jeanne d'Hack CTF], role: [1#super[st] place (tied)], dates: [2026])[]
@@ -150,9 +169,5 @@
 
   #row[Technical][Rust, C/C++, Python, Java, TypeScript, Vue.js, React, Django, AWS, Docker, CI/CD, Linux, networking, embedded systems, security, deep learning.]
   #row[Languages][French (native), English (fluent, TOEIC 975, C1), Spanish and German (basic, A2).]
-  #row[Other][Problem-solving, autonomy, teamwork, adaptability. Driving licence.]
-
-  #section[Interests]
-
-  Systems and security: Rust, embedded systems, networks and cloud.
+  #row[Driving licence][B.]
 ]
